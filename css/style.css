@@ -11,6 +11,15 @@
   height: 35px;
 }
 
+.fc-black{
+  color: black !important;
+}
+
+.header-bottom a:hover{
+  color: #0070D1 !important;
+}
+
+
 .header-bottom{
   font-size: 18px;
 }
