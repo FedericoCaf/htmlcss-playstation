@@ -10,6 +10,10 @@
   color: black !important;
 }
 
+.fc-white{
+  color: white !important;
+}
+
 .header-bottom a:hover{
   color: #0070D1 !important;
 }
@@ -34,8 +38,8 @@
   font-size: 20px;
 }
 
-.home-page{
-  height: 680px;
+.fc-home-page{
+  height: 75vh;
   background-image: url(../img/jumbo-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,9 +48,7 @@
 
 .fc-text-container{
  display: flex;
- flex-direction: column;
- justify-content:flex-end;
- height: 680px;
+ height: 75vh;
  width: 360px;
  padding-bottom: 60px;
 }
@@ -56,11 +58,63 @@
 }
 
 .fc-home-descr{
-  padding: 30px 0;
+  padding: 25px 0;
   color: white;
 }
 
 .fc-title-home{
-  padding-top: 30px;
+  padding-top: 25px;
   color: white;
 }
+
+.fc-bg-red{
+  background-color: #CD3D0F !important;
+  color: white;
+}
+
+.fc-box-position{
+  position: relative;
+}
+
+.fc-box-listing{
+  margin-bottom: 20px;
+}
+
+.fc-box-listing img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-listing{
+  margin-top: 35px;
+  padding-bottom: 15px;
+}
+
+.fc-box-listing:hover{
+  position: absolute;
+  top: -10px;
+  left:0;
+}
+
+.box-console-page-top{
+  background-color: turquoise;
+}
+
+.box-console-page{
+  height: 600px;
+  background-color: turquoise;
+}
+
+.box-console-page-bottom{
+  height: 100px;
+  background-color: yellowgreen;
+}
+
+.fc-console{
+  margin-top: 20px;
+}
+
+.box-console-page img{
+  width: 100%;
+}
+
