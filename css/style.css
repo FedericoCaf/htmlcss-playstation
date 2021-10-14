@@ -275,10 +275,11 @@ color: #0070D1;
 
 /* FINE SCONTI, UTILIZZATE LE STESSE CLASSI DI ESPLORA */
 
-
-/* .box-social-icon{
- max-width: 100px;
-} */
+.box-social-icon{
+  flex-shrink: 0;
+  width: 12%;
+  padding: 10px;
+}
 
 .box-social-icon img{
   width: 100%;
@@ -287,6 +288,12 @@ color: #0070D1;
 .social-title{
   padding-top: 30px;
   padding-bottom: 70px;
+}
+
+footer{
+  margin-top: 70px;
+  height: 500px;
+  background-color: #00439C;
 }
 
 
@@ -316,5 +323,9 @@ color: #0070D1;
 
     .fc-box-col-plus-left{
       padding-top: 20%;
+    }
+
+    .box-social-icon{
+      width: 50%;
     }
 }
