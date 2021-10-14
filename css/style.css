@@ -207,8 +207,8 @@ color: #0070D1;
 /* FINE SECOND JUMBO */
 
 .fc-container-text-esplora{
-  height: 150px;
-  max-width: 37%;
+  /* height: 150px; */
+  /* max-width: 37%; */
   margin: 0 auto;
 }
 
@@ -217,7 +217,7 @@ color: #0070D1;
 }
 
 .fc-box-col-esplora{
-  height: 400px;
+  /* height: 400px; */
 }
 
 .fc-box-col-esplora img{
@@ -231,6 +231,7 @@ color: #0070D1;
 .fc-banner-playstation-plus{
   height: 400px;
   background-color: #BEBCBB;
+  margin-top: 30px;
 }
 
 .fc-box-col-plus-left{
@@ -277,5 +278,13 @@ color: #0070D1;
 
     .box-console-page-bottom{
       text-align: left;
+    }
+
+    .fc-box-col-plus img{
+      display: none;
+    }
+
+    .fc-box-col-plus-left{
+      padding-top: 20%;
     }
 }
