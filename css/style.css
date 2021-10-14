@@ -1,10 +1,3 @@
-.header-top{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 15px;
-  height: 35px;
-}
 
 .fc-black{
   color: black !important;
@@ -18,10 +11,17 @@
 color: #0070D1;
 }
 
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 15px;
+  height: 35px;
+}
+
 .header-bottom a:hover{
   color: #0070D1 !important;
 }
-
 
 .header-bottom{
   font-size: 18px;
@@ -42,6 +42,8 @@ color: #0070D1;
 .fa-search{
   font-size: 20px;
 }
+
+/* FINE HEADER */
 
 .fc-home-page{
   min-height: 75vh;
@@ -81,29 +83,29 @@ color: #0070D1;
   position: relative;
 }
 
-.fc-box-listing{
+.fc-box-listing-home, .fc-box-listing-sec-jumbo{
   margin-bottom: 20px;
   padding: 5px;
 }
 
-.fc-box-listing:hover{
+.fc-box-listing-home:hover{
   position: absolute;
   top: -10px;
   left:0;
 }
 
-.fc-box-listing:active{
+.fc-box-listing-home:active{
   border: 2px solid #0070D1;
   border-radius: 10px;
 }
 
-.fc-box-listing img{
+.fc-box-listing-home img, .fc-box-listing-sec-jumbo img{
   width: 100%;
   border-radius: 10px;
 }
 
 .container-listing{
-  margin-top: 35px;
+  padding-top: 35px;
   padding-bottom: 15px;
 }
 
@@ -135,9 +137,17 @@ color: #0070D1;
 }
 
 .fc-custom-btn-blue{
-  padding: 7px !important;
+  padding: 5px 20px !important;
   font-size: 14px;
   border: none;
+  background-color: #0070D1 !important;
+}
+
+.fc-custom-btn-lightgray{
+  padding: 5px 20px !important;
+  font-size: 14px;
+  border: none;
+  background-color: #D9DADC !important;
 }
 
 .box-console-page-bottom{
@@ -167,6 +177,11 @@ color: #0070D1;
   margin-top: 50px;
 }
 
+/* FINE CONSOLE */
+
+.fc-listing-second-jumbo{
+  background-color: #1F1F1F;
+}
 
 .fc-second-jumbo{
   min-height: 75vh;
@@ -176,11 +191,74 @@ color: #0070D1;
   background-position:top;
   margin-top: 30px;
 }
-
 .fc-it-takes-two-logo img{
   margin-top: 70px;
   width: 60%;
 }
+
+.fc-listing-second-jumbo h3{
+  padding-top: 20px;
+}
+
+.fc-box-listing-sec-jumbo p{
+  font-size: 18px;
+}
+
+/* FINE SECOND JUMBO */
+
+.fc-container-text-esplora{
+  height: 150px;
+  max-width: 37%;
+  margin: 0 auto;
+}
+
+.fc-container-text-esplora h2{
+  padding-top: 20px;
+}
+
+.fc-box-col-esplora{
+  height: 400px;
+}
+
+.fc-box-col-esplora img{
+  width: 100%;
+}
+
+.fc-box-col-esplora p{
+  font-size: 18px;
+}
+
+.fc-banner-playstation-plus{
+  height: 400px;
+  background-color: #BEBCBB;
+}
+
+.fc-box-col-plus-left{
+  width: 70%;
+}
+
+.fc-box-col-plus-left p{
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.container-description{
+  min-height: 60px;
+}
+
+.container-img-plus-logo img{
+  width: 100%;
+}
+
+.fc-box-col-plus{
+  height: 400px;
+}
+
+.fc-box-col-plus img{
+  height: 100%;
+}
+
+
 
 @media (max-width:768px){
 
