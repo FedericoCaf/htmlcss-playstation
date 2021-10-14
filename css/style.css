@@ -109,7 +109,7 @@ color: #0070D1;
   padding-bottom: 15px;
 }
 
-/* FINE SEZIONE LISTING */
+/* FINE LISTING */
 
 .fc-container-text-console h2{
  font-size: 40px;
@@ -179,10 +179,6 @@ color: #0070D1;
 
 /* FINE CONSOLE */
 
-.fc-listing-second-jumbo{
-  background-color: #1F1F1F;
-}
-
 .fc-second-jumbo{
   min-height: 75vh;
   background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
@@ -191,6 +187,11 @@ color: #0070D1;
   background-position:top;
   margin-top: 30px;
 }
+
+.fc-listing-second-jumbo{
+  background-color: #1F1F1F;
+}
+
 .fc-it-takes-two-logo img{
   margin-top: 70px;
   width: 60%;
@@ -204,12 +205,15 @@ color: #0070D1;
   font-size: 18px;
 }
 
+.fc-esplora-playstation{
+  margin-top: 20px;
+}
+
 /* FINE SECOND JUMBO */
 
 .fc-container-text-esplora{
-  /* height: 150px; */
-  /* max-width: 37%; */
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .fc-container-text-esplora h2{
@@ -217,7 +221,7 @@ color: #0070D1;
 }
 
 .fc-box-col-esplora{
-  /* height: 400px; */
+  margin-top: 10px;
 }
 
 .fc-box-col-esplora img{
@@ -228,14 +232,14 @@ color: #0070D1;
   font-size: 18px;
 }
 
-.fc-banner-playstation-plus{
-  height: 400px;
+.fc-banner-plus-now{
+  height: 500px;
   background-color: #BEBCBB;
   margin-top: 30px;
 }
 
 .fc-box-col-plus-left{
-  width: 70%;
+  width: 90%;
 }
 
 .fc-box-col-plus-left p{
@@ -252,11 +256,37 @@ color: #0070D1;
 }
 
 .fc-box-col-plus{
-  height: 400px;
+  height: 500px;
 }
 
 .fc-box-col-plus img{
   height: 100%;
+}
+
+/* FINE ESPLORA */
+
+.fc-bg-darkblue{
+  background-color: #161C3B;
+}
+
+.fc-discount-playstation{
+  margin-top: 20px;
+}
+
+/* FINE SCONTI, UTILIZZATE LE STESSE CLASSI DI ESPLORA */
+
+
+/* .box-social-icon{
+ max-width: 100px;
+} */
+
+.box-social-icon img{
+  width: 100%;
+}
+
+.social-title{
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 
