@@ -15,6 +15,12 @@
 color: #0070D1;
 }
 
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 .header-top{
   display: flex;
   align-items: center;
@@ -61,6 +67,10 @@ color: #0070D1;
   color:#0070D1;
 }
 
+.dropdown-menu{
+  width: 100vw !important;
+}
+
 /* FINE HEADER */
 
 .fc-home-page{
@@ -69,6 +79,8 @@ color: #0070D1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position:top;
+  margin-bottom: 20px;
+  margin-top: 111px;
 }
 
 .fc-text-container{
@@ -92,14 +104,15 @@ color: #0070D1;
   color: white;
 }
 
-.fc-bg-red{
+.fc-btn-red{
   background-color: #CD3D0F !important;
-  color: white;
+  color: white; 
+  transition: all 0.1s;
 }
 
-.fc-container-border{
-  background-color: crimson;
-  border-radius: 10px;
+.fc-btn-red:hover{
+  outline: 2px solid #CD3D0F;
+  outline-offset: 2px;
 }
 
 .fc-box-listing-home, .fc-box-listing-sec-jumbo{
@@ -119,7 +132,7 @@ color: #0070D1;
 
 .fc-box-listing-home:hover{
   margin-top: 0;
-  box-shadow: 0 12px 32px 1px;
+  box-shadow: 0 12px 30px;
 }
 
 .fc-box-listing-home img, .fc-box-listing-sec-jumbo img{
@@ -127,7 +140,11 @@ color: #0070D1;
   border-radius: 10px;
 }
 
-.container-listing{
+.fc-box-listing-sec-jumbo:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.fc-container-listing{
   padding-top: 35px;
   padding-bottom: 15px;
 }
@@ -164,6 +181,12 @@ color: #0070D1;
   font-size: 14px;
   border: none;
   background-color: #0070D1 !important;
+  transition: all 0.1s;
+}
+
+.fc-custom-btn-blue:hover{
+  outline: 2px solid #0070D1;
+  outline-offset: 2px;
 }
 
 .fc-custom-btn-lightgray{
@@ -171,21 +194,43 @@ color: #0070D1;
   font-size: 14px;
   border: none;
   background-color: #D9DADC !important;
+  transition: all 0.1s;
+}
+
+.fc-custom-btn-lightgray:hover{
+  outline: 3px solid lightgray;
+  color: #0070D1 !important;
+}
+
+.fc-custom-btn-lightgray.fc-btn-ps-now:hover{
+
+  outline: 2px solid lightgray;
+  outline-offset: 2px;
 }
 
 .box-console-page-bottom{
-  height: 150px;
+  height: 220px;
   padding-bottom: 50px;
   text-align: center;
   border-bottom: 2px solid transparent;
+  opacity: 0.5;
+  transition: all 0.4s;
 }
 
-.box-console-page-bottom:hover{
+.box-console-page-bottom.active{
   border-bottom: 2px solid #0070D1;
+}
+
+.box-console-page-bottom.active{
+  opacity: 1;
 }
 
 .box-console-page-bottom img{
   height: 100%;
+}
+
+.box-console-page-bottom:hover{
+  opacity: 1;
 }
 
 .box-console-page-bottom p{
@@ -301,6 +346,14 @@ color: #0070D1;
   margin-top: 20px;
 }
 
+.fc-box-col-esplora.fc-box-discount{
+  transition: all 0.4s;
+}
+
+.fc-box-col-esplora.fc-box-discount:hover{
+ transform: scale(1.05, 1.05);
+}
+
 /* FINE SCONTI, UTILIZZATE LE STESSE CLASSI DI ESPLORA */
 
 .box-social-icon{
@@ -308,6 +361,11 @@ color: #0070D1;
   width: 12%;
   padding: 10px;
   cursor: pointer;
+  transition: all 0.4s;
+}
+
+.box-social-icon:hover{
+  transform: scale(1.05, 1.05);
 }
 
 .box-social-icon img{
@@ -347,6 +405,7 @@ footer{
   list-style: none;
   color: white;
   cursor: pointer;
+  padding: 5px;
 }
 
 .container-sony-logo{
@@ -364,14 +423,6 @@ footer{
   width: 50%;
   margin-top: 15px;
 }
-
-
-
-
-
-
-
-
 
 @media (max-width:768px){
 
@@ -404,7 +455,6 @@ footer{
       width: 50%;
     }
 
-   
 }
 
 @media (max-width:992px){
