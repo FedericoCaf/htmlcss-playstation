@@ -1,5 +1,5 @@
-
-/* *{
+/* 
+*{
   outline: 2px solid red;
 } */
 
@@ -54,9 +54,9 @@ header{
   font-size: 20px;
 }
 
+/* UTLIZZO IL FONTAWSOME COME CHEVRON */
 .dropdown-chevron::after {
   vertical-align: 0;
-  /* border: none; */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f078";
@@ -68,19 +68,14 @@ header{
   color:#0070D1;
 }
 
-/* .dropdown-menu{
-  width: 100vw !important;
-} */
-
 .fc-btn-black:hover{
   outline: 2px solid gray;
   outline-offset: 2px;
   background-color: gray;
 }
 
-
-
 /* FINE HEADER */
+
 
 .fc-home-page{
   min-height: 75vh;
@@ -158,7 +153,7 @@ header{
   padding-bottom: 15px;
 }
 
-/* FINE LISTING */
+/* FINE HOME PAGE E LISTING */
 
 .fc-container-text-console h2{
  font-size: 40px;
@@ -174,6 +169,7 @@ header{
 
 .box-console-page{
   max-width: 100%;
+  margin-top: 10px;
 }
 
 .box-console-page-text{
@@ -218,7 +214,7 @@ header{
 }
 
 .box-console-page-bottom{
-  height: 220px;
+  height: 200px;
   padding-bottom: 50px;
   text-align: center;
   border-bottom: 2px solid transparent;
@@ -386,8 +382,6 @@ header{
   padding-bottom: 70px;
 }
 
-
-
 /* FINE SOCIAL */
 
 footer{
@@ -434,6 +428,10 @@ footer{
   padding-bottom: 20px;
 }
 
+/* FINE FOOTER */
+
+/* KEYFRAME PER ANIMAZIONI ALL'AVVIO DELLA PAGINA */
+
 .fc-text-container{
     animation: transitionIn 3s;
   }
@@ -452,10 +450,9 @@ footer{
     }
     
   }
+  
 
-
-
-
+/* MEDIA QUERY AGGIUNTIVE */
 
 @media (max-width:768px){
 
