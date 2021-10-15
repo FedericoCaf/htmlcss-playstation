@@ -19,6 +19,7 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .header-top{
@@ -67,9 +68,17 @@ header{
   color:#0070D1;
 }
 
-.dropdown-menu{
+/* .dropdown-menu{
   width: 100vw !important;
+} */
+
+.fc-btn-black:hover{
+  outline: 2px solid gray;
+  outline-offset: 2px;
+  background-color: gray;
 }
+
+
 
 /* FINE HEADER */
 
@@ -422,6 +431,7 @@ footer{
 .container-text-sony{
   width: 50%;
   margin-top: 15px;
+  padding-bottom: 20px;
 }
 
 @media (max-width:768px){
@@ -464,3 +474,10 @@ footer{
   }
 
 }
+
+@media (max-width:1200px){
+  .nav-item a{
+    font-size: 13px;
+  }
+}
+
