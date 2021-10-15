@@ -95,7 +95,7 @@ header{
 .fc-text-container{
  display: flex;
  min-height: 75vh;
- width: 360px;
+ width: 400px;
  padding-bottom: 60px;
 }
 
@@ -433,6 +433,29 @@ footer{
   margin-top: 15px;
   padding-bottom: 20px;
 }
+
+.fc-text-container{
+    animation: transitionIn 3s;
+  }
+  
+  @keyframes transitionIn {
+  
+    from {
+      transform: translateY(15px);
+      filter: opacity(0);
+   
+    }
+  
+    to {
+      transform: translateY(0);
+      filter: opacity(1)
+    }
+    
+  }
+
+
+
+
 
 @media (max-width:768px){
 
