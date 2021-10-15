@@ -1,4 +1,8 @@
 
+/* *{
+  outline: 2px solid red;
+} */
+
 .fc-black{
   color: black !important;
 }
@@ -43,6 +47,20 @@ color: #0070D1;
   font-size: 20px;
 }
 
+.dropdown-chevron::after {
+  vertical-align: 0;
+  /* border: none; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: gray;
+  font-size: 14px;
+}
+
+.dropdown-chevron:hover:after{
+  color:#0070D1;
+}
+
 /* FINE HEADER */
 
 .fc-home-page{
@@ -79,28 +97,33 @@ color: #0070D1;
   color: white;
 }
 
-.fc-box-position{
-  position: relative;
+.fc-container-border{
+  background-color: crimson;
+  border-radius: 10px;
 }
 
 .fc-box-listing-home, .fc-box-listing-sec-jumbo{
   margin-bottom: 20px;
-  padding: 5px;
+  margin-top: 10px;
+  transition:all 0.4s;
 }
 
-.fc-box-listing-home:hover{
-  position: absolute;
-  top: -10px;
-  left:0;
+.fc-box-listing-home.active{
+  outline: 2px solid #0072ce;
+  outline-offset: 3px;
 }
 
-.fc-box-listing-home:active{
-  border: 2px solid #0070D1;
+.fc-box-listing-home{ 
   border-radius: 10px;
 }
 
+.fc-box-listing-home:hover{
+  margin-top: 0;
+  box-shadow: 0 12px 32px 1px;
+}
+
 .fc-box-listing-home img, .fc-box-listing-sec-jumbo img{
-  width: 100%;
+   width: 100%;
   border-radius: 10px;
 }
 
@@ -165,8 +188,12 @@ color: #0070D1;
   height: 100%;
 }
 
+.box-console-page-bottom p{
+  font-size: 85%;
+}
+
 .fc-console{
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .box-console-page img{
@@ -193,7 +220,7 @@ color: #0070D1;
 }
 
 .fc-it-takes-two-logo img{
-  margin-top: 70px;
+  padding-bottom: 15px;
   width: 60%;
 }
 
@@ -236,6 +263,7 @@ color: #0070D1;
   height: 500px;
   background-color: #BEBCBB;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .fc-box-col-plus-left{
@@ -279,6 +307,7 @@ color: #0070D1;
   flex-shrink: 0;
   width: 12%;
   padding: 10px;
+  cursor: pointer;
 }
 
 .box-social-icon img{
@@ -290,11 +319,57 @@ color: #0070D1;
   padding-bottom: 70px;
 }
 
+
+
+/* FINE SOCIAL */
+
 footer{
   margin-top: 70px;
-  height: 500px;
+  min-height: 500px;
   background-color: #00439C;
 }
+
+.fc-box-col-footer{
+  padding-top: 70px;
+}
+
+.container-globe-img{
+  height: 20px;
+  margin-top: 20px;
+}
+
+.container-globe-img img{
+  height: 100%;
+  margin-right: 5px;
+}
+
+.fc-box-col-footer ul li{
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.container-sony-logo{
+  height: 50px;
+  width: 50%;
+  background-color: #00439C ;
+}
+
+.container-sony-logo img{
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.container-text-sony{
+  width: 50%;
+  margin-top: 15px;
+}
+
+
+
+
+
+
 
 
 
@@ -328,4 +403,14 @@ footer{
     .box-social-icon{
       width: 50%;
     }
+
+   
+}
+
+@media (max-width:992px){
+
+  .container-text-sony{
+    width: 100%;
+  }
+
 }
